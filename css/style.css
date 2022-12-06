@@ -1,0 +1,392 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+*{
+  margin: 0;
+}
+h1,h2,h3,p{
+  margin: 0;
+}
+
+:root {
+  --iris : #4D5AE5;
+  --iris-active : #404BBF;
+  --navy-blue : #2E2F42;
+  --green : #31D0AA;
+  --slate : #434455;
+  --light-slate : #8E8F99;
+  --cornflower : #E7E9FC; 
+  --cloud : #F4F4FD;
+  --herotext-color: #ffff;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--navy-blue);
+  background-color: #ffff;
+}
+
+/*------------Styles: Studio page-----------------*/
+
+.conteiner{
+  box-sizing: border-box;
+  width: 1158px;                     /* на макеті уявний контейнер для усього контенту: загальна ширина 1440 - 156*2(бокові відступи) +15*2(педінги для краю) = 1158 px*/
+  margin: 0 auto;                    /* центруємо контейнер по горизонталі*/
+  padding: 0 15px 0 15px;            /* залишаємо педінги зліва і зправа контейнера*/
+}
+
+/*Page Header*/
+.page-header {
+  background: #FFFFFF;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+.logo-word-header {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: inherit;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.main-menu-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding-top: 24px;
+  padding: 24px 0px 24px 0px;
+  gap: 40px;
+  margin-left: 77px;
+}
+.main-menu-link {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: inherit;
+  text-decoration: none;
+}
+.main-menu-link:hover {
+  color: var(--iris);
+}
+.main-menu-link:focus {
+  color: var(--iris);
+}
+.main-menu-link:active {
+  color: var(--iris);
+}
+.contacts-list {
+  list-style: none;
+  display: flex;
+  padding: 24px 0px 24px 0px;
+  gap: 40px;
+  align-items: center;
+}
+.contacts-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--slate);
+  text-decoration: none;
+}
+.contacts-link:hover {
+  color: var(--iris);
+}
+.contacts-link:focus {
+  color: var(--iris);
+}
+.contacts-link:active {
+  color: var(--iris);
+}
+
+/*Section: Hero Block*/
+.hero-section {
+  background-color: var(--navy-blue);
+  padding-top: 192px;
+  padding-bottom: 192px;
+  }
+.hero-title {
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  color: var(--herotext-color);
+  width: 492px;
+  height: 120px;
+  text-align: center;
+  margin: 0 auto;
+}
+.hero-button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  width: 170px;
+  height: 51px;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background: var(--iris);
+  color: var(--herotext-color);
+  cursor: pointer;
+  margin: 0 auto;
+  margin-top: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-button:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+.hero-button:focus
+{
+  background: var(--iris-active);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.hero-button:active
+{
+  background: var(--iris-active);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+/*Section: Company Features list*/
+.features-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.company-features-title{  /*Hidden title*/
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.features-list{
+  display: flex;
+  list-style: none;
+  padding: 0;
+  gap: 24px;
+}
+.features-item-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color : inherit;
+  margin-bottom: 8px;
+}
+.features-item-text {
+  font-size: 16px;
+  line-height: 1.5;
+  color : var(--slate);
+  letter-spacing: 0.02em;
+}
+/*Section: What we are doing*/
+.whatwearedoing-section{
+  padding-bottom: 120px;
+}
+.whatwearedoing-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: inherit;
+  text-align: center;
+  padding-bottom: 72px;
+}
+.whatwearedoing-list{
+  display: flex;
+  list-style: none;
+  padding: 0;
+  gap: 24px;
+}
+
+/*Section: Our team, Team cards*/
+.ourteam-section {
+  background-color: var(--cloud);
+  padding-bottom: 120px;
+}
+.ourteam-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  text-align: center;
+  color: inherit;
+  padding-top: 120px;
+  margin-bottom: 72px;
+}
+.ourteam-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  gap: 24px;
+}
+.ourteam-card-content{
+  padding: 32px 16px 32px 16px;
+}
+.ourteam-card {
+  background: #ffffff;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+  text-align: center;
+}
+.ourteam-card-photo{
+  display: block;
+}
+.ourteam-card-name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: inherit;
+  margin-bottom: 8px;
+}
+.ourteam-card-position {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--slate);
+}
+
+/*Page footer*/
+.page-footer {
+  background-color: var(--navy-blue);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.logo-word-footer {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  color: var(--cloud);
+ 
+}
+.logo-word-web {
+  color: var(--iris);
+}
+.slogan {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color:var(--cornflower);
+  padding-right: 864px;
+  margin-top: 16px;
+}
+
+
+
+/*------------Styles: Portfolio page-----------------*/
+
+.portfolio-section{
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
+/* Hidden title */
+.portfolio-section-title{   
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Styles: Filter list of buttons*/
+.buttons-list{
+  padding-left: 0;
+  padding-bottom: 72px;
+  display: flex;
+  list-style: none;
+  gap: 24px;
+  justify-content: center;
+
+}
+.buttons-list-item{
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  height: 48px;
+  background: var(--cloud);
+  border: 1px solid var(--cornflower);
+  color : var(--iris);
+  border-radius: 4px;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  padding: 8px 16px;
+  cursor: pointer;
+}
+.buttons-list-item:hover {
+  border: none;
+  background: var(--iris);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  color: #ffff;
+} 
+ .buttons-list-item:focus {
+  border: none;
+  background: var(--iris);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  color: #ffff;
+}  
+
+/* Styles: Project cards list */
+.project-cards-list{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0px;
+  align-items: center;
+} 
+.project-card-photo{
+  display: block;
+}
+.project-card{
+  background: #FFFFFF;
+  border: 0.5px solid var(--cloud);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  flex-basis: calc(50% / 3);
+}
+
+.project-card-link{
+  color: var(--navy-blue);
+  text-decoration: none;
+}
+.project-card-content{
+  padding: 32px 16px;
+  
+ 
+}
+.project-card-caption{
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+.project-card-type{
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--slate);
+}
